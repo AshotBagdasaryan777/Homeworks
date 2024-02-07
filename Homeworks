@@ -1,0 +1,81 @@
+1.
+const arr=[1,2,3,4,5]
+function findEl(arr){
+let boolean=true
+    for(let i =0;i<arr.length;i++){
+if(!boolean){
+    return arr[i]
+}
+break
+    }
+}
+
+console.log(findEl(arr));
+
+2.
+const array=[1,2,3,4,5,6,7]
+function toFilterElements(array){
+    const newArray=[]
+    let boolean =true
+    for(let i=0;i<array.length;i++){
+if(!boolean){
+    newArray.push(array[i])
+}
+    }
+return newArray
+}
+console.log(toFilterElements(array));
+
+3.
+const array1=[1,2,3,4,5,6,7]
+function mappingElements(array1){
+    const resArray=[array1.length-1]
+    let boolean =true
+    for(let i=0;i<array1.length;i++){
+if(boolean){
+    resArray.push(array1[i])
+    resArray.shift()
+}
+    }
+return resArray
+}
+console.log(mappingElements(array1))
+
+4.
+const array2=[1,2,3,4,5]
+function everyElIsTrue(array2){
+    let boolean=true
+for(let i=0;i<array2.length;i++){
+    if(boolean){
+        return true
+    }
+}
+return false
+}
+console.log(everyElIsTrue(array2));
+
+5.
+const arr1=[1,2,3,4,5]
+function findElIndex(arr1){
+let boolean=true
+    for(let i =0;i<arr1.length;i++){
+if(boolean){
+    return i
+}
+break
+    }
+}
+
+console.log(findElIndex(arr1));
+   
+
+
+6.
+const array3=[1,2,3,4,5,6,7]
+function forEachEl(array3){
+    for(let i =0;i<array3.length;i++){
+      return array3[i]
+    }
+}
+console.log(forEachEl(array3));
+
